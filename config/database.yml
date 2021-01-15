@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
+
+development:
+  <<: *default
+  database: react_rails_recipe_dev
+
+test:
+  <<: *default
+  database: react_rails_recipe_test
+
+production:
+  <<: *default
+  database: react_rails_production
+  username: react_rails
+  password: <%= ENV['REACT_RAILS_DATABASE_PASSWORD'] %>
