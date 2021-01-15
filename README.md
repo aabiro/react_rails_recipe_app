@@ -23,4 +23,3 @@ There are only 12 ingredients and 6 recipes today, but some day there may be tho
 ## Tests:
 
 - Run ruby test suite with `bundle exec rspec ./spec -f d`
-- Run JS test suite with `yarn test`
