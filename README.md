@@ -1,7 +1,6 @@
 # Recipe Finder Application
 
 A checklist of ingredients to render recipes that are associated with all selected ingredients.
-There are only 12 ingredients and 6 recipes today, but some day there may be thousands.
 
 ## Requirements:
 
